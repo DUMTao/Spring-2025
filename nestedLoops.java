@@ -6,18 +6,35 @@ public class nestedLoops {
     // Hint: Use two nested loops, one for rows and one for columns.
     public static void printMultiplicationTable(int size) {
         Scanner terminal = new Scanner(System.in);
+        System.out.print("   ");
+
+        //For numbers above
+        for (int i = 1; i < 10; i++){
+            System.out.printf("%4s", i);
+        }
+        System.out.println();
+
+        String line = "-";
+        System.out.println(line.repeat(40));
         
-        
-        //Column loop, run until i is equal to size and increase
-        for (int i = 0; i <= size; i++){
-            //Row loop, run until j is equal to size and increase
-            for (int j = 1; j <= size; j++){
-                System.out.println("*");
+        //Column rows
+        for (int columns = 1; columns <= size; columns++){
+            while (columns != size + 1){
+                System.out.print(columns);
+                break;
             }
-        
-            System.out.println("-");
+            
+            String dividers = "|";
+            System.out.printf("%2s", dividers);
+
+            //Row rows
+            for (int rows = 1; rows <= size; rows++){
+                System.out.printf("%4d", columns * rows);
+            }
+            System.out.println();
         }
     }
+
 
     // Problem 2: Pyramid Pattern
     // Hint: Use nested loops where the outer loop controls the number of rows and the inner loop controls the number of spaces and stars.
