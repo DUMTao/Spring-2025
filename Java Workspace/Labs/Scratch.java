@@ -26,9 +26,30 @@ public class Scratch {
         terminal.close();
     }
     
+    public static void DrivingCost(){
+        //Write program that takes an input the distance to drive in miles, the fuel efficiency of the are in miles per gallon,
+        //and the price of gas per gallon
+        Scanner terminal = new Scanner(System.in);
 
+        //Variable to enter miles
+        double miles = terminal.nextDouble();
+        //Variable to enter how efficient the fuel is
+        double fuelEfficiency = terminal.nextDouble();
+        //Variable of the price per gallon
+        double gallonPrice = 0;
+
+        //Convert it to a string
+        String sGallonPrice = Double.toString(gallonPrice);
+
+        if ()
+    
+    }
     
     public static void main(String[] args) {
-        SumDigits();
+        //First :p
+        //SumDigits();
+    
+        //Second
+        DrivingCost();
     }
 }
