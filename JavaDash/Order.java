@@ -8,6 +8,14 @@ public class Order {
     private Customer customer;
     private Restaurant restaurant;
 
+    public Order(String orderId, List<MenuItem> items, OrderStatus status, Customer customer, Restaurant restaurant){
+        this.orderId = orderId;
+        this.items = items;
+        this.status = status;
+        this.customer = customer;
+        this.restaurant = restaurant;
+    }
+    
     public void updateSatuts(OrderStatus status){
 
     }

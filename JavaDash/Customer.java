@@ -8,11 +8,17 @@ public class Customer {
     private Cart cart;
     
     public void addToCart(MenuItem item){
-
+        if (cart == null){
+            cart = new Cart();
+        }
+        cart.addItem(item);
     }
 
     public Order placeOrder(){
-
+        if (cart == null){
+            return null;
+        }
+        
     }
 
     public List<Order> viewOrderHistory(){
